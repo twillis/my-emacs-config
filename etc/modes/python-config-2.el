@@ -1,0 +1,2 @@
+(require 'elpy)
+(elpy-enable)
