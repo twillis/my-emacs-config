@@ -44,12 +44,6 @@
  '(semantic-new-buffer-setup-functions (quote ((c-mode . semantic-default-c-setup) (c++-mode . semantic-default-c-setup) (html-mode . semantic-default-html-setup) (java-mode . wisent-java-default-setup) (js-mode . wisent-javascript-setup-parser) (python-mode . wisent-python-default-setup) (scheme-mode . semantic-default-scheme-setup) (srecode-template-mode . srecode-template-setup-parser) (makefile-automake-mode . semantic-default-make-setup) (makefile-gmake-mode . semantic-default-make-setup) (makefile-makepp-mode . semantic-default-make-setup) (makefile-bsdmake-mode . semantic-default-make-setup) (makefile-imake-mode . semantic-default-make-setup) (makefile-mode . semantic-default-make-setup) (js2-mode . wisent-javascript-setup-parser))))
  '(show-paren-mode t)
  '(vm-stunnel-program "/usr/bin/stunnel4"))
-;; (custom-set-faces
-;;  ;; custom-set-faces was added by Custom.
-;;  ;; If you edit it by hand, you could mess it up, so be careful.
-;;  ;; Your init file should contain only one such instance.
-;;  ;; If there is more than one, they won't work right.
-;;  '(default ((t (:inherit nil :stipple nil :background "black" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 100 :width normal :foundry "unknown" :family "Droid Sans Mono")))))
  
 (put 'narrow-to-region 'disabled nil)
 (setq scroll-step           1
@@ -57,18 +51,6 @@
 
 (defun imenu-progress-message (a &optional c d))
 
-;; (add-to-list 'load-path "/opt/local/share/emacs/site-lisp/slime")
-;; (require 'slime-autoloads)
-;; (setq slime-lisp-implementations
-;;      `((clisp ("/opt/local/bin/clisp"))))
-;; (add-hook 'lisp-mode-hook
-;;            (lambda ()
-;;              (cond ((not (featurep 'slime))
-;;                     (require 'slime) 
-;;                     (normal-mode)))))
-
-;; (eval-after-load "slime"
-;;    '(slime-setup '(slime-fancy slime-banner)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
