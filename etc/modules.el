@@ -87,9 +87,6 @@
 ;; org-present
 (load-file (concat emacs-config-modules-dir "/org-present-config.el"))
 
-;; clojure
-(load-file (concat emacs-config-modules-dir "/clojure-config.el"))
-
 ;;web-mode
 (load-file (concat emacs-config-modules-dir "/web-mode-config.el"))
 

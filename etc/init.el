@@ -13,7 +13,51 @@
       (goto-char (point-max))
       (eval-print-last-sexp))))
 
-(el-get 'sync)
+(setq my:el-get-packages 
+      '(
+	anything
+	auto-complete
+	auto-complete-css
+	auto-complete-emacs-lisp
+	auto-complete-rst
+	auto-complete-ruby
+	auto-highlight-symbol
+	clojure-mode
+	coffee-mode
+	color-theme
+	flx
+	flymake-coffee
+	flymake-css
+	flymake-cursor
+	flymake-easy
+	flymake-haml
+	flymake-html-validator
+	flymake-ruby
+	flymake-sass
+	flymake-shell
+	fuzzy
+	helm
+	helm-project
+	ido-vertical-mode
+	idomenu
+	jedi
+	js2-mode
+	js3-mode
+	json
+	magit
+	mustache
+	nrepl
+	nyan-mode
+	org-mode
+	projectile
+	rainbow-delimiters
+	rainbow-mode
+	undo-tree
+	web-mode
+	zencoding-mode
+	))
+
+(el-get 'sync my:el-get-packages)
 
 ;; defer fontification while scrolling
 (setq jit-lock-defer-time 0.05)
