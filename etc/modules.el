@@ -8,17 +8,6 @@
 ;; dired-jump C-x C-j
 (require 'dired-x)
 
-;; cedet (in core now??)
-;; (load-file (concat emacs-config-modules-dir "/cedet-config.el"))
-
-
-;; ecb mode
-;; (load-file (concat emacs-config-modules-dir "/ecb-config.el"))
-
-
-;; decent terminal inside emacs
-;; (require 'multi-term)
-
 ;; spotlight for emacs
 ;; http://www.emacswiki.org/emacs/Anything
 (require 'anything-config)
@@ -42,8 +31,6 @@
 ;; (color-theme-matrix)
 ;; (color-theme-tty-dark)
 
-;; (require 'imenu)
-
 ;; org-mode
 ;; http://orgmode.org
 (load-file (concat emacs-config-modules-dir "/org-config.el"))
@@ -53,9 +40,6 @@
 
 ;;flymake config
 (load-file (concat emacs-config-modules-dir "/flymake-config.el"))
-
-;;yasnippet configuration
-;; (load-file (concat emacs-config-modules-dir "/yasnippet-config.el"))
 
 ;;python config
 (load-file (concat emacs-config-modules-dir "/python-config-jedi.el"))
@@ -78,17 +62,11 @@
 ;; expand-region-config
 (load-file (concat emacs-config-modules-dir "/expand-region-config.el"))
 
-;; zen
-(load-file (concat emacs-config-modules-dir "/zen-coding.el"))
-
 ;; my shit
 (load-file (concat emacs-config-modules-dir "/tom.el"))
 
 ;; org-present
 (load-file (concat emacs-config-modules-dir "/org-present-config.el"))
-
-;;web-mode
-(load-file (concat emacs-config-modules-dir "/web-mode-config.el"))
 
 ;rainbow-delimiters
 (load-file (concat emacs-config-modules-dir "/rainbow-delimiters-config.el"))

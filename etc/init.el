@@ -15,6 +15,7 @@
 
 (setq my:el-get-packages 
       '(
+	auto-complete
 	anything
 	auto-highlight-symbol
 	color-theme
@@ -31,9 +32,11 @@
 	rainbow-delimiters
 	rainbow-mode
 	undo-tree
+	zencoding-mode
 	))
 
 (el-get 'sync my:el-get-packages)
+(el-get 'sync)
 
 ;; defer fontification while scrolling
 (setq jit-lock-defer-time 0.05)
