@@ -32,6 +32,7 @@
 	rainbow-delimiters
 	rainbow-mode
 	undo-tree
+	expand-region
 	))
 
 (el-get 'sync my:el-get-packages)
