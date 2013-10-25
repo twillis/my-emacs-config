@@ -32,7 +32,6 @@
 	rainbow-delimiters
 	rainbow-mode
 	undo-tree
-	zencoding-mode
 	))
 
 (el-get 'sync my:el-get-packages)
@@ -75,3 +74,10 @@
 
 ;;finally....
 (cd init-path)
+
+
+;; nxhtml-mode warnings workaround
+(when (string< "24.1" (format "%d.%d" emacs-major-version emacs-minor-version))
+(eval-after-load "mumamo"
+'(setq mumamo-per-buffer-local-vars
+(delq 'buffer-file-name mumamo-per-buffer-local-vars))))
