@@ -33,6 +33,7 @@
 	rainbow-mode
 	undo-tree
 	expand-region
+        iedit
 	))
 
 (el-get 'sync my:el-get-packages)

@@ -39,6 +39,7 @@
  '(jabber-roster-line-format "%c %-25n %u %-8s  %S")
  '(js2-highlight-level 3)
  '(js2-mode-escape-quotes nil)
+ '(magit-diff-options nil)
  '(org-agenda-files (quote ("~/.org/work.org" "~/projects/batterii_backports_proj/traversal.org" "~/.org/javascript.org" "~/.org/personal.org" "~/.org/org.org")))
  '(org-enforce-todo-dependencies t)
  '(semantic-new-buffer-setup-functions (quote ((c-mode . semantic-default-c-setup) (c++-mode . semantic-default-c-setup) (html-mode . semantic-default-html-setup) (java-mode . wisent-java-default-setup) (js-mode . wisent-javascript-setup-parser) (python-mode . wisent-python-default-setup) (scheme-mode . semantic-default-scheme-setup) (srecode-template-mode . srecode-template-setup-parser) (makefile-automake-mode . semantic-default-make-setup) (makefile-gmake-mode . semantic-default-make-setup) (makefile-makepp-mode . semantic-default-make-setup) (makefile-bsdmake-mode . semantic-default-make-setup) (makefile-imake-mode . semantic-default-make-setup) (makefile-mode . semantic-default-make-setup) (js2-mode . wisent-javascript-setup-parser))))
