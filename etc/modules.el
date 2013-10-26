@@ -93,3 +93,6 @@
 
 ;; css stuff
 (load-file (concat emacs-config-modules-dir "/css-config.el"))
+
+;; ruby stuff
+(load-file (concat emacs-config-modules-dir "/ruby-config.el"))
