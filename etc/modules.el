@@ -14,7 +14,7 @@
 
 ;; interactively do things (IDO)
 ;; http://www.emacswiki.org/emacs/InteractivelyDoThings
-; projectile
+
 (require 'ido)
 (ido-mode t)
 (require 'idomenu)
@@ -22,6 +22,10 @@
 (ido-everywhere 1)
 (ido-vertical-mode)
 (flx-ido-mode 1)
+(ido-ubiquitous-mode 1)
+(ido-yes-or-no-mode 1)
+(ido-at-point-mode 1)
+; projectile
 (projectile-global-mode)
 
 ;; color theme

@@ -64,3 +64,7 @@
  '(flymake-errline ((((class color)) (:underline "red" :weight bold))))
  '(flymake-warnline ((((class color)) (:underline "yellow"))))
  '(flymake-infoline ((((class color)) (:underline "dark gray")))))
+
+
+;; smex
+(smex-initialize)

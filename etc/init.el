@@ -23,6 +23,10 @@
 	helm
 	helm-projectile
 	ido-vertical-mode
+	ido-ubiquitous
+	ido-yes-or-no
+	ido-at-point
+	smex
 	idomenu
 	magit
 	nyan-mode
