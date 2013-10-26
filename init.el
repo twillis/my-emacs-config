@@ -60,6 +60,7 @@
  '(flymake-errline ((((class color)) (:underline "red" :weight bold))))
  '(flymake-infoline ((((class color)) (:underline "dark gray"))))
  '(flymake-warnline ((((class color)) (:underline "yellow"))))
+ '(hl-line ((t (:background "gray7"))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "orange"))))
  '(rainbow-delimiters-depth-2-face ((t (:foreground "yellow"))))
  '(rainbow-delimiters-depth-3-face ((t (:foreground "green"))))

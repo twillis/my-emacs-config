@@ -34,6 +34,7 @@
 	undo-tree
 	expand-region
         iedit
+        ace-jump-mode
 	))
 
 (el-get 'sync my:el-get-packages)

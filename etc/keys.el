@@ -6,5 +6,6 @@
 (global-set-key (kbd "<f7>") 'compile)
 (global-set-key "\C-xj" 'idomenu)
 (global-set-key "\C-xg" 'magit-status)
-;; (global-set-key "\C-;" 'iedit-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+
 (provide 'keys)
