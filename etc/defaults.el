@@ -11,6 +11,9 @@
 ;; automatic integration with clipboard
 (setq x-select-enable-clipboard t)
 
+;; omit uninteresting things
+(setq-default dired-omit-files-p t)
+
 ;;strip down gui
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
