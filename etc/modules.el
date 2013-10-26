@@ -78,3 +78,12 @@
 
 ;rainbow-delimiters
 (load-file (concat emacs-config-modules-dir "/rainbow-delimiters-config.el"))
+
+
+;; clojure stuff
+(load-file (concat emacs-config-modules-dir "/clojure-config.el"))
+
+
+;; js stuff
+;; clojure stuff
+(load-file (concat emacs-config-modules-dir "/js-config.el"))
