@@ -4,6 +4,8 @@
 			   js2-refactor
 			   flymake-json
 			   json-mode
+			   coffee-mode
+			   flymake-coffee
 			   ))
 (ensure-packages js-config-packages)
 (require 'flymake-jslint)

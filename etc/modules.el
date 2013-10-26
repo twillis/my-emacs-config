@@ -89,3 +89,7 @@
 
 ;; html stuff
 (load-file (concat emacs-config-modules-dir "/html-config.el"))
+
+
+;; css stuff
+(load-file (concat emacs-config-modules-dir "/css-config.el"))
