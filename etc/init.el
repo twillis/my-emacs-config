@@ -2,32 +2,30 @@
 ;;;; emacs initialization file init.el ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;el-get
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(setq package-archives
+      '(("gnu"         . "http://elpa.gnu.org/packages/")
+        ("original"    . "http://tromey.com/elpa/")
+        ("org"         . "http://orgmode.org/elpa/")
+        ("marmalade"   . "http://marmalade-repo.org/packages/")
+        ("melpa"       . "http://melpa.milkbox.net/packages/")))
+(package-initialize)
 
-(unless (require 'el-get nil 'noerror)
-  (with-current-buffer
-      (url-retrieve-synchronously
-       "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
-    (let (el-get-master-branch)
-      (goto-char (point-max))
-      (eval-print-last-sexp))))
-
-(setq my:el-get-packages 
+(setq core-packages
       '(
 	auto-complete
 	anything
 	auto-highlight-symbol
 	color-theme
+        color-theme-approximate
 	flx
+        flx-ido
 	fuzzy
 	helm
-	helm-project
+	helm-projectile
 	ido-vertical-mode
 	idomenu
 	magit
 	nyan-mode
-	org-mode
 	projectile
 	rainbow-delimiters
 	rainbow-mode
@@ -37,8 +35,16 @@
         ace-jump-mode
 	))
 
-(el-get 'sync my:el-get-packages)
-(el-get 'sync)
+(unless package-archive-contents
+  (package-refresh-contents))
+
+
+(defun ensure-packages (packages)
+  (dolist (package packages)
+    (unless (package-installed-p package)
+      (package-install package))))
+
+(ensure-packages core-packages)
 
 ;; defer fontification while scrolling
 (setq jit-lock-defer-time 0.05)

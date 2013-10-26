@@ -26,10 +26,14 @@
 
 ;; color theme
 (require 'color-theme)
+(color-theme-initialize)
 (color-theme-midnight)
 ;; (color-theme-dark-laptop)
 ;; (color-theme-matrix)
 ;; (color-theme-tty-dark)
+
+;; turn on undo tree globally
+(global-undo-tree-mode)
 
 ;; org-mode
 ;; http://orgmode.org
