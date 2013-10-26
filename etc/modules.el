@@ -42,7 +42,7 @@
 (load-file (concat emacs-config-modules-dir "/flymake-config.el"))
 
 ;;python config
-(load-file (concat emacs-config-modules-dir "/python-config-jedi.el"))
+(load-file (concat emacs-config-modules-dir "/python-config.el"))
 
 ;;js config
 (load-file (concat emacs-config-modules-dir "/js-config.el"))

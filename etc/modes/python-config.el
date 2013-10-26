@@ -1,5 +1,10 @@
 ;; flymake-python config
 ;; http://github.com/akaihola/flymake-python
+(setq python-config:packages '(jedi))
+(el-get 'sync python-config:packages)
+
+
+
 (setq python-flymake-dir (concat emacs-lib-dir "/" "flymake-python"))
 (add-to-list 'load-path python-flymake-dir)
 (setq pyflymake (concat python-flymake-dir "/" "pyflymake.py"))
