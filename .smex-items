@@ -1,0 +1,34 @@
+
+;; ----- smex-history -----
+(
+ package-install
+ ace-jump-buffer
+ package-list-packages
+ ace-jump-mode
+ revert-buffer
+ occur
+ hl-line-mode
+)
+
+;; ----- smex-data -----
+(
+ (flymake-ruby-load . 2)
+ (menu-bar-mode . 1)
+ (eshell . 1)
+ (find-dired . 5)
+ (list-packages . 1)
+ (multiple-cursors-mode . 3)
+ (mc/edit-lines . 1)
+ (package-install . 3)
+ (iedit-mode . 4)
+ (Info-edit . 1)
+ (package-list-packages . 3)
+ (eval-buffer . 2)
+ (hl-line-mode . 3)
+ (narrow-to-region . 1)
+ (customize-face . 1)
+ (occur . 1)
+ (revert-buffer . 1)
+ (ace-jump-mode . 1)
+ (ace-jump-buffer . 1)
+)
