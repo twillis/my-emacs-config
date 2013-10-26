@@ -21,6 +21,7 @@
 
 (add-hook 'js2-mode-hook 'my-disable-indent-tabs-mode)
 (add-hook 'json-mode-hook 'my-disable-indent-tabs-mode)
+(add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
 (defun my-disable-indent-tabs-mode ()
   (set-variable 'indent-tabs-mode nil))
@@ -44,3 +45,4 @@
                (split-string
                 (if (string-match "/\\* *global *\\(.*?\\) *\\*/" btext) (match-string-no-properties 1 btext) "")
                 " *, *" t))))))
+
