@@ -38,3 +38,8 @@ tests contained within the file you are looking at"
 	     (point-max))))
     (shell-command-on-region b e
      "python -mjson.tool" (current-buffer) t)))
+
+
+;; run preferences.el if exists
+(if (file-exists-p "preferences.el")
+    (load-file "preferences.el"))
