@@ -85,5 +85,7 @@
 
 
 ;; js stuff
-;; clojure stuff
 (load-file (concat emacs-config-modules-dir "/js-config.el"))
+
+;; html stuff
+(load-file (concat emacs-config-modules-dir "/html-config.el"))
