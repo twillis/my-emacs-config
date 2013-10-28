@@ -20,4 +20,17 @@
 ;; iedit
 (global-set-key (kbd "C-;") 'iedit-mode)
 
+
+;; font-size
+(define-key global-map (kbd "C-+") 'text-scale-increase)
+(define-key global-map (kbd "C--") 'text-scale-decrease)
+
+
+(defun text-scale-default () 
+  (interactive) 
+  (text-scale-adjust 0))
+
+(define-key global-map (kbd "C-c C-0") 'text-scale-default)
+
+
 (provide 'keys)

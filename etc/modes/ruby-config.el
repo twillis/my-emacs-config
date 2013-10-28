@@ -28,5 +28,7 @@
 (add-hook 'haml-mode-hook 'flymake-haml-load)
 (add-hook 'yaml-mode-hook 'flymake-yaml-load)
 
+;; something i've installed here breaks web-mode, probbaly rainbow or
+;; hilight or something else
 (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.rhtml$" . web-mode))
