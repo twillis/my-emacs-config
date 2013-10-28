@@ -43,5 +43,5 @@
 
 
 ;; display in hours not days
-(setq org-time-clocksum-format
-      '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
+;; (setq org-time-clocksum-format
+;;       '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
