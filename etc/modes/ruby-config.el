@@ -22,6 +22,11 @@
                              web-mode
 			     ))
 (ensure-packages ruby-config-packages)
+;; from
+;; http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
+(add-to-list 'ac-modes 'enh-ruby-mode)
+(add-to-list 'ac-modes 'web-mode)
+
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'enh-ruby-mode-hook 'flymake-ruby-load)
