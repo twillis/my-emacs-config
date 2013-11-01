@@ -2,12 +2,15 @@
 ;; org-mode config
 ;; http://orgmode.org
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq org-config-core '(org-plus-contrib))
 (setq org-config-packages '(
-                            org-plus-contrib
                             elnode
                             org-trello
 			   ))
+
+(ensure-packages org-config-core)
 (ensure-packages org-config-packages)
+
 ;; (require 'org-install)
 ;; (require 'org-mobile)
 
