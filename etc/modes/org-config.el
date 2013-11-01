@@ -2,8 +2,14 @@
 ;; org-mode config
 ;; http://orgmode.org
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'org-install)
-(require 'org-mobile)
+(setq org-config-packages '(
+                            org-plus-contrib
+                            elnode
+                            org-trello
+			   ))
+(ensure-packages org-config-packages)
+;; (require 'org-install)
+;; (require 'org-mobile)
 
 ;; associate *.org with org-mode
 (add-to-list 'auto-mode-alist '("\\.org$" . org-mode))
