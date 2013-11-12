@@ -38,5 +38,5 @@
 (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.rhtml$" . web-mode))
 
-(rspec-use-rake-when-possible nil)
-(rspec-use-zeus-when-possible nil)
+(setq rspec-use-rake-when-possible nil)
+(setq rspec-use-zeus-when-possible nil)
