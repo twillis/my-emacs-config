@@ -14,7 +14,7 @@
 			     ruby-refactor
 			     ruby-test-mode
 			     ruby-tools
-                             rinari
+                             rspec-mode
                              flymake-haml
                              haml-mode
                              yaml-mode
@@ -37,3 +37,6 @@
 ;; hilight or something else
 (add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.rhtml$" . web-mode))
+
+(rspec-use-rake-when-possible nil)
+(rspec-use-zeus-when-possible nil)
