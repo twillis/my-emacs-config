@@ -96,3 +96,7 @@
 
 ;; ruby stuff
 (load-file (concat emacs-config-modules-dir "/ruby-config.el"))
+
+
+;; campfire stuff
+(load-file (concat emacs-config-modules-dir "/efire-config.el"))
