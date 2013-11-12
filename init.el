@@ -4,11 +4,19 @@
 ;;this config gets kind of hairy, attempting to clean it up some to
 ;;make it more manageable
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; import env vars to help ruby not explode
+(setenv "LANG" "en_US.UTF-8")
+(setenv "LC_ALL" "en_US.UTF-8")
+(setenv "LC_CTYPE" "en_US.UTF-8")
+
 
 ;; start server if not running
 ;; http://stackoverflow.com/questions/5570451/how-to-start-emacs-server-only-if-it-is-not-started
 (load "server")
 (unless (server-running-p) (server-start))
+
+
+
 
 ;;important variables used elsewhere in the scripting
 (setq emacs-home-dir (expand-file-name "~/.emacs.d"))
