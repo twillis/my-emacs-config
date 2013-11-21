@@ -6,6 +6,7 @@
 			   json-mode
 			   coffee-mode
 			   flymake-coffee
+                           js-comint
 			   ))
 (ensure-packages js-config-packages)
 (require 'flymake-jslint)
@@ -46,3 +47,4 @@
                 (if (string-match "/\\* *global *\\(.*?\\) *\\*/" btext) (match-string-no-properties 1 btext) "")
                 " *, *" t))))))
 
+(setq coffee-tab-width 2)
