@@ -34,8 +34,6 @@
 (require 'smartparens-config)
 (sp-use-smartparens-bindings)
 
-
-;; (electric-pair-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;turn off annoying beep
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

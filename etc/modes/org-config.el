@@ -46,11 +46,7 @@
 	 "* %?\n  %i\n  %a")))
 
 (setq org-refile-targets '((org-agenda-files . (:level . 2))))
-(add-hook 'org-mode-hook
-	  (lambda ()
-	    (electric-pair-mode)))
-
 
 ;; display in hours not days
-;; (setq org-time-clocksum-format
-;;       '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
+(setq org-time-clocksum-format
+      '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
