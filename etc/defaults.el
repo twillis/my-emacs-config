@@ -30,7 +30,12 @@
 
 ;;paren matching minor mode
 (show-paren-mode)
-(electric-pair-mode)
+(smartparens-global-mode t)
+(require 'smartparens-config)
+(sp-use-smartparens-bindings)
+
+
+;; (electric-pair-mode)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;turn off annoying beep
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

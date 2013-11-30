@@ -37,6 +37,7 @@
 	expand-region
         multiple-cursors
         ace-jump-mode
+	smartparens
 	))
 
 (unless package-archive-contents

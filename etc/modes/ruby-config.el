@@ -1,6 +1,5 @@
 ;; just a wild guess what might be needed
 (setq ruby-config-packages '(
-			     starter-kit-ruby
 			     enh-ruby-mode
 			     flymake-ruby
 			     helm-rails
