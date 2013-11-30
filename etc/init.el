@@ -35,7 +35,7 @@
 	rainbow-mode
 	undo-tree
 	expand-region
-        iedit
+        multiple-cursors
         ace-jump-mode
 	))
 

@@ -17,10 +17,6 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
-;; iedit
-(global-set-key (kbd "C-;") 'iedit-mode)
-
-
 ;; font-size
 (define-key global-map (kbd "C-+") 'text-scale-increase)
 (define-key global-map (kbd "C--") 'text-scale-decrease)

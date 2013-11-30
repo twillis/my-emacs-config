@@ -70,6 +70,9 @@
 ;; expand-region-config
 (load-file (concat emacs-config-modules-dir "/expand-region-config.el"))
 
+;; multiple-cursors-config
+(load-file (concat emacs-config-modules-dir "/multiple-cursors-config.el"))
+
 ;; my shit
 (load-file (concat emacs-config-modules-dir "/tom.el"))
 
