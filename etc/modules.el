@@ -103,3 +103,7 @@
 
 ;; campfire stuff
 (load-file (concat emacs-config-modules-dir "/efire-config.el"))
+
+
+;; smartparens mode config
+(load-file (concat emacs-config-modules-dir "/sp-config.el"))
