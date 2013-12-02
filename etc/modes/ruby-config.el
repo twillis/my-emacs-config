@@ -19,6 +19,7 @@
                              yaml-mode
                              flymake-yaml
                              web-mode
+			     projectile-rails
 			     ))
 (ensure-packages ruby-config-packages)
 ;; from
@@ -39,3 +40,5 @@
 
 (setq rspec-use-rake-when-possible nil)
 (setq rspec-use-zeus-when-possible nil)
+
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
