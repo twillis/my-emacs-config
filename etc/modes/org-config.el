@@ -5,7 +5,6 @@
 (setq org-config-core '(org-plus-contrib))
 (setq org-config-packages '(
                             elnode
-                            org-trello
 			   ))
 
 (ensure-packages org-config-core)
@@ -41,11 +40,11 @@
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/.org/org.org" "Tasks")
-	 "* TODO %?\n  %i\n  %a")
+	 "* TODO %?\n  %i\n  %a" :clock-in t :clock-resume t)
 	("n" "Note" entry (file+headline "~/.org/org.org" "Notes")
-	 "* %?\n  %i\n  %a")))
+	 "* %?\n  %i\n  %a" :clock-in t :clock-resume t)))
 
-(setq org-refile-targets '((org-agenda-files . (:level . 2))))
+(setq org-refile-targets '((org-agenda-files . (:level . 1))))
 
 ;; display in hours not days
 (setq org-time-clocksum-format

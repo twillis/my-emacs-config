@@ -29,4 +29,7 @@
 (define-key global-map (kbd "C-c C-0") 'text-scale-default)
 
 
+;;windmove
+(windmove-default-keybindings 'meta)
+
 (provide 'keys)

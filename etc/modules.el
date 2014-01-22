@@ -107,3 +107,7 @@
 
 ;; smartparens mode config
 (load-file (concat emacs-config-modules-dir "/sp-config.el"))
+
+
+;; visual-regexp
+(load-file (concat emacs-config-modules-dir "/visual-regexp-config.el"))
