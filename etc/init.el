@@ -38,6 +38,7 @@
         multiple-cursors
         ace-jump-mode
 	smartparens
+	auto-dim-other-buffers
 	))
 
 (unless package-archive-contents
@@ -49,11 +50,14 @@
     (unless (package-installed-p package)
       (package-install package))))
 
+
+
 (ensure-packages core-packages)
 
 ;; defer fontification while scrolling
+(auto-dim-other-buffers-mode)
 (setq jit-lock-defer-time 0.05)
-
+(setq initial-scratch-message "")
 ;; should be path where emacs was initiated set it back at the end to
 ;; insure, not init file hijacked it and dropped the user somewhere
 ;; they didn't expect to be
