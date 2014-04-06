@@ -100,14 +100,12 @@
 ;; ruby stuff
 (load-file (concat emacs-config-modules-dir "/ruby-config.el"))
 
-
-;; campfire stuff
-(load-file (concat emacs-config-modules-dir "/efire-config.el"))
-
-
 ;; smartparens mode config
 (load-file (concat emacs-config-modules-dir "/sp-config.el"))
 
 
 ;; visual-regexp
 (load-file (concat emacs-config-modules-dir "/visual-regexp-config.el"))
+
+;; compile
+(load-file (concat emacs-config-modules-dir "/compilemode-config.el"))
