@@ -7,6 +7,7 @@
 			     less-css-mode
 			     scss-mode
 			     show-css
+			     sass-mode
 			     ))
 (ensure-packages css-config-packages)
 
