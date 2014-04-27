@@ -109,3 +109,7 @@
 
 ;; compile
 (load-file (concat emacs-config-modules-dir "/compilemode-config.el"))
+
+
+;; helm-swoop
+(load-file (concat emacs-config-modules-dir "/swoop-config.el"))

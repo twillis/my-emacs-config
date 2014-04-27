@@ -35,8 +35,23 @@
 ;; babel stuff
 (org-babel-do-load-languages
  'org-babel-load-languages
- '((python . t) (emacs-lisp . t)))
+ '((python . t) 
+   (emacs-lisp . t) 
+   ;; (clojure . t)
+))
 
+;; need dev version of org-mode for this
+;; (require 'ob-clojure)
+;; (setq org-babel-clojure-backend 'cider)
+
+
+
+;; Let's have pretty source code blocks
+(setq org-edit-src-content-indentation 0
+      org-src-tab-acts-natively t
+      org-src-fontify-natively t
+      ;; org-confirm-babel-evaluate nil
+)
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/.org/org.org" "Tasks")
