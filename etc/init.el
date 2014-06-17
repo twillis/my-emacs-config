@@ -19,6 +19,8 @@
 	solarized-theme
 	monokai-theme
 	color-theme-sanityinc-tomorrow
+	cyberpunk-theme
+	base16-theme
 	flx
         flx-ido
 	fuzzy
@@ -56,6 +58,13 @@
 
 
 (ensure-packages core-packages)
+
+
+;; (load-theme 'solarized-dark t)
+;; (load-theme 'monokai t)
+;; (load-theme 'sanityinc-tomorrow-bright t)
+(load-theme 'cyberpunk t)
+
 
 ;; defer fontification while scrolling
 
