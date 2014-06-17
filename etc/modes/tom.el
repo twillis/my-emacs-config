@@ -43,3 +43,7 @@ tests contained within the file you are looking at"
 ;; run preferences.el if exists
 (if (file-exists-p "preferences.el")
     (load-file "preferences.el"))
+
+
+(global-set-key (kbd "C-|") 'ace-window)
+(global-set-key (kbd "C-x b") 'helm-mini)

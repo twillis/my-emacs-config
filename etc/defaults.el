@@ -6,7 +6,7 @@
 ;; disable scroll bar, tool bar and menu bar to maximize real estate
 ;; for editing.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(set-default-font "Source Code Pro-11")
+(set-default-font "Source Code Pro-12")
 
 ;; automatic integration with clipboard
 (setq x-select-enable-clipboard t)
@@ -68,3 +68,7 @@
 
 ;; smex
 (smex-initialize)
+
+;; (load-theme 'solarized-dark t)
+;; (load-theme 'monokai t)
+(load-theme 'sanityinc-tomorrow-bright t)

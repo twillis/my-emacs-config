@@ -15,8 +15,10 @@
 	auto-complete
 	anything
 	auto-highlight-symbol
-	color-theme
         color-theme-approximate
+	solarized-theme
+	monokai-theme
+	color-theme-sanityinc-tomorrow
 	flx
         flx-ido
 	fuzzy
@@ -37,6 +39,7 @@
 	expand-region
         multiple-cursors
         ace-jump-mode
+	ace-window
 	smartparens
 	))
 
@@ -48,6 +51,7 @@
   (dolist (package packages)
     (unless (package-installed-p package)
       (package-install package))))
+
 
 
 

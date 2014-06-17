@@ -28,14 +28,6 @@
 ; projectile
 (projectile-global-mode)
 
-;; color theme
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-midnight)
-;; (color-theme-dark-laptop)
-;; (color-theme-matrix)
-;; (color-theme-tty-dark)
-
 ;; turn on undo tree globally
 (global-undo-tree-mode)
 
@@ -113,3 +105,7 @@
 
 ;; helm-swoop
 (load-file (concat emacs-config-modules-dir "/swoop-config.el"))
+
+
+;; nlinum 
+;; (load-file (concat emacs-config-modules-dir "/nlinum-config.el"))
