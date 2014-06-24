@@ -14,7 +14,6 @@
       '(
 	auto-complete
 	anything
-	auto-highlight-symbol
         color-theme-approximate
 	solarized-theme
 	monokai-theme
@@ -35,6 +34,7 @@
 	magit
 	nyan-mode
 	projectile
+	ack-and-a-half
 	rainbow-delimiters
 	rainbow-mode
 	undo-tree

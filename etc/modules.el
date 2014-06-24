@@ -26,7 +26,7 @@
 (ido-yes-or-no-mode 1)
 (ido-at-point-mode 1)
 ; projectile
-(projectile-global-mode)
+(projectile-global-mode +1)
 
 ;; turn on undo tree globally
 (global-undo-tree-mode)
