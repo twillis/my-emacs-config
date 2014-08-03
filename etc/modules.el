@@ -10,7 +10,7 @@
 
 ;; spotlight for emacs
 ;; http://www.emacswiki.org/emacs/Anything
-(require 'anything-config)
+;; (require 'anything-config)
 
 ;; interactively do things (IDO)
 ;; http://www.emacswiki.org/emacs/InteractivelyDoThings
@@ -102,7 +102,8 @@
 ;; compile
 (load-file (concat emacs-config-modules-dir "/compilemode-config.el"))
 
-
+;; helm
+(load-file (concat emacs-config-modules-dir "/my-helm-config.el"))
 ;; helm-swoop
 (load-file (concat emacs-config-modules-dir "/swoop-config.el"))
 
