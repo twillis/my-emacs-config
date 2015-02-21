@@ -1,7 +1,6 @@
 (setq clojure-packages '(clojure-mode
 			 cider
 			 cider-decompile
-			 cider-tracing
 			 clj-refactor
 			 cljdoc
 			 cljsbuild-mode
