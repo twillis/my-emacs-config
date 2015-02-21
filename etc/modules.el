@@ -31,6 +31,9 @@
 ;; turn on undo tree globally
 (global-undo-tree-mode)
 
+;; for imenu-ish stuff
+(semantic-mode 1)
+
 ;; org-mode
 ;; http://orgmode.org
 (load-file (concat emacs-config-modules-dir "/org-config.el"))
@@ -110,3 +113,11 @@
 
 ;; nlinum 
 ;; (load-file (concat emacs-config-modules-dir "/nlinum-config.el"))
+
+
+;; haskell
+(load-file (concat emacs-config-modules-dir "/haskell-config.el"))
+
+
+;; god-mode
+;;(load-file (concat emacs-config-modules-dir "/god-mode-config.el"))

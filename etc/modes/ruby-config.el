@@ -18,15 +18,12 @@
                              haml-mode
                              yaml-mode
                              flymake-yaml
-                             web-mode
 			     projectile-rails
 			     ))
 (ensure-packages ruby-config-packages)
 ;; from
 ;; http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 (add-to-list 'ac-modes 'enh-ruby-mode)
-(add-to-list 'ac-modes 'web-mode)
-
 
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'enh-ruby-mode-hook 'flymake-ruby-load)
@@ -35,8 +32,8 @@
 
 ;; something i've installed here breaks web-mode, probbaly rainbow or
 ;; hilight or something else
-(add-to-list 'auto-mode-alist '("\\.erb$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.rhtml$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.rhtml$" . html-mode))
 
 (setq rspec-use-rake-when-possible nil)
 (setq rspec-use-zeus-when-possible nil)

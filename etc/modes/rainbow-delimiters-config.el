@@ -1,3 +1,3 @@
-(add-to-list 'load-path (concat emacs-lib-dir "/" "rainbow-delimiters"))
-(require 'rainbow-delimiters)
+(setq rainbow-packages '(rainbow-delimiters))
+(ensure-packages rainbow-packages)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)

@@ -48,8 +48,8 @@ tests contained within the file you are looking at"
 (global-set-key (kbd "C-|") 'ace-window)
 (global-set-key (kbd "C-x b") 'helm-mini)
 (global-set-key (kbd "C-x v b") 'magit-blame-mode)
-
-
+(global-set-key (kbd "M-s") 'sp-rewrap-sexp) ;; like change surround
+(global-set-key (kbd "C-;") 'iedit-mode)
 
 ;; hippie-expand from wiki
 (setq dcsh-command-list '("all_registers"
@@ -90,3 +90,4 @@ tests contained within the file you are looking at"
 			  try-expand-dabbrev-visible
 			  try-expand-dabbrev
 			  try-expand-dabbrev-all-buffers) t))
+

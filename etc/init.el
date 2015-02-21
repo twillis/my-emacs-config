@@ -14,6 +14,7 @@
       '(
 	auto-complete
 	anything
+	ag
         color-theme-approximate
 	solarized-theme
 	monokai-theme
@@ -25,6 +26,8 @@
 	fuzzy
 	helm
 	helm-projectile
+	helm-ack
+	helm-ag
 	ido-vertical-mode
 	ido-ubiquitous
 	ido-yes-or-no
@@ -32,6 +35,7 @@
 	smex
 	idomenu
 	magit
+	;; magit-gh-pulls
 	nyan-mode
 	projectile
 	ack-and-a-half
@@ -43,6 +47,7 @@
         ace-jump-mode
 	ace-window
 	smartparens
+	iedit
 	))
 
 (unless package-archive-contents

@@ -1,17 +1,19 @@
 (setq html-config-packages '(
 			     emmet-mode
-			     web-mode
 			     haml-mode
-			     flymake-haml))
+			     flymake-haml
+			     smartparens))
 (ensure-packages html-config-packages)
 
-(add-to-list 'auto-mode-alist '("\\.html$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jinja2$" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html$" . html-mode))
+(add-to-list 'auto-mode-alist '("\\.jinja2$" . html-mode))
 
-(setq web-mode-engines-alist
-      '(("ctemplate"    . "\\.html\\'")))
-
-(add-hook 'web-mode-hook 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode)
 (add-hook 'xml-mode-hook 'emmet-mode)
 (add-hook 'nxml-mode-hook 'emmet-mode)
+(add-hook 'html-mode-hook 'emmet-mode)
+(add-hook 'haml-mode-hook 'emmet-mode)
+(add-hook 'css-mode-hook 'emmet-mode)
+
+
+(add-hook 'haml-mode-hook (lambda () (setq emmet-indentation haml-indent-offset))) ;;

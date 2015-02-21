@@ -6,7 +6,7 @@
 			 cljdoc
 			 cljsbuild-mode
 			 clojure-cheatsheet
-			 clojure-test-mode
-			 clojurescript-mode))
+			 clojurescript-mode
+			 clojure-quick-repls))
 (ensure-packages clojure-packages)
 
