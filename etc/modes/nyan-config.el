@@ -1,2 +1,5 @@
-(nyan-mode)
-(nyan-start-animation)
+(if (display-graphic-p)
+    (progn
+      (nyan-mode)
+      (nyan-start-animation)))
+
