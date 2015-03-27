@@ -5,6 +5,7 @@
 (setq org-config-core '(org-plus-contrib))
 (setq org-config-packages '(
                             elnode
+			    ox-reveal
 			   ))
 
 (ensure-packages org-config-core)
@@ -64,3 +65,5 @@
 ;; display in hours not days
 (setq org-time-clocksum-format
       '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
+
+(require 'ox-reveal)
