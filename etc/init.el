@@ -48,6 +48,7 @@
 	ace-window
 	smartparens
 	iedit
+	ws-butler
 	))
 
 (unless package-archive-contents
@@ -64,6 +65,7 @@
 
 (ensure-packages core-packages)
 
+(ws-butler-global-mode)
 
 ;; (load-theme 'solarized-dark t)
 ;; (load-theme 'monokai t)
