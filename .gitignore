@@ -18,3 +18,12 @@
 /lib/org-8.2.1
 /eshell/history
 /eshell/lastdir
+/.achievements
+/.cask/
+/.edbi-ds-history
+/.litable-lists.el
+/.mc-lists.el
+/.python-environments/
+/games/
+/semanticdb/
+/var/
