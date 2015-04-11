@@ -48,3 +48,10 @@
 (add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile$" . enh-ruby-mode))
+
+
+(defun inf-ruby-console-padrino (dir)
+  "Run racksh in DIR."
+  (interactive "D")
+  (let ((default-directory (file-name-as-directory dir)))
+    (run-ruby "bundle exec padrino c" "padrino")))
