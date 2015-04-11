@@ -9,6 +9,9 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
 
+;;set size
+(when window-system (set-frame-size (selected-frame) 160 55))
+
 ;; import env vars to help ruby not explode
 (setenv "LANG" "en_US.UTF-8")
 (setenv "LC_ALL" "en_US.UTF-8")
