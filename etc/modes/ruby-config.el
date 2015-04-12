@@ -24,7 +24,8 @@
 ;; from
 ;; http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 (add-to-list 'ac-modes 'enh-ruby-mode)
-
+(add-hook 'enh-ruby-mode-hook 'inf-ruby-minor-mode)
+(add-hook 'after-init-hook 'inf-ruby-switch-setup)
 (add-hook 'ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'enh-ruby-mode-hook 'flymake-ruby-load)
 (add-hook 'haml-mode-hook 'flymake-haml-load)
@@ -42,16 +43,21 @@
 
 
 
-(add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Guardfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rabl$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
 
 
 (defun inf-ruby-console-padrino (dir)
-  "Run racksh in DIR."
+  "run padrino c in dir"
   (interactive "D")
   (let ((default-directory (file-name-as-directory dir)))
     (run-ruby "bundle exec padrino c" "padrino")))
+
+
+(eval-after-load 'inf-ruby '(define-key inf-ruby-minor-mode-map (kbd "C-c C-s" ) 'inf-ruby-console-auto)) ;;would rather have this
