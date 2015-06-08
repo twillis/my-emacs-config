@@ -110,6 +110,8 @@
 ;; helm-swoop
 (load-file (concat emacs-config-modules-dir "/swoop-config.el"))
 
+;; company
+(load-file (concat emacs-config-modules-dir "/my-company-config.el"))
 
 ;; nlinum 
 ;; (load-file (concat emacs-config-modules-dir "/nlinum-config.el"))

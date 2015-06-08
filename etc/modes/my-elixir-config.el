@@ -1,11 +1,7 @@
-(setq elixir-config-packages '(elixir-mix
-			       alchemist
+(setq elixir-config-packages '(alchemist
 			       elixir-mode
 			       elixir-yasnippets
-			       flymake-elixir))
+			       company))
 
 
 (ensure-packages elixir-config-packages)
-
-(require 'elixir-mix)
-(global-elixir-mix-mode)
