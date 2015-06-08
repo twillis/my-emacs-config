@@ -121,3 +121,9 @@
 
 ;; god-mode
 ;;(load-file (concat emacs-config-modules-dir "/god-mode-config.el"))
+
+;; magit config
+(load-file (concat emacs-config-modules-dir "/magit-config.el"))
+
+;; elixir
+(load-file (concat emacs-config-modules-dir "/my-elixir-config.el"))

@@ -7,6 +7,7 @@
 			   coffee-mode
 			   flymake-coffee
                            js-comint
+			   handlebars-mode
 			   ))
 (ensure-packages js-config-packages)
 (require 'flymake-jslint)
@@ -34,7 +35,7 @@
 (eval-after-load "js2-mode"
   '(progn
      (setq js2-missing-semi-one-line-override t)
-     ;; (setq-default js2-basic-offset 2) ; 2 spaces for indentation (if you prefer 2 spaces instead of default 4 spaces for tab)
+     (setq-default js2-basic-offset 2) ; 2 spaces for indentation (if you prefer 2 spaces instead of default 4 spaces for tab)
 
      ;; following is from http://www.emacswiki.org/emacs/Js2Mode
      (add-hook 'js2-post-parse-callbacks 'my-js2-parse-global-vars-decls)

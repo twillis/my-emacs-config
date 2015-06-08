@@ -64,3 +64,7 @@
 
 ;; smex
 (smex-initialize)
+
+
+;; tramp
+(setq tramp-default-method "ssh")
