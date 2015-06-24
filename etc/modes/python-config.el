@@ -31,8 +31,9 @@
 	  (lambda ()
 	    (set-variable 'py-indent-offset 4)
 	    (set-variable 'indent-tabs-mode nil)
-	    (jedi:setup)
-	    (setq jedi:setup-keys t)))
+	    ;; (jedi:setup)
+	    ;; (setq jedi:setup-keys t)
+	    ))
 	    ;; (define-key py-mode-map (kbd "RET") 'newline-and-indent))) # not working in 24
 
 
