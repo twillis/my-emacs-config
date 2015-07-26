@@ -5,3 +5,4 @@
 
 
 (ensure-packages elixir-config-packages)
+(require 'alchemist)

@@ -129,3 +129,6 @@
 
 ;; elixir
 (load-file (concat emacs-config-modules-dir "/my-elixir-config.el"))
+
+;; common lisp
+(load-file (concat emacs-config-modules-dir "/cl-config.el"))
