@@ -49,6 +49,7 @@
 	smartparens
 	iedit
 	ws-butler
+	neotree
 	))
 
 (unless package-archive-contents
@@ -66,6 +67,11 @@
 (ensure-packages core-packages)
 
 (ws-butler-global-mode)
+
+(setq projectile-switch-project-action 'projectile-dired)
+;; (setq projectile-switch-project-action 'neotree-projectile-action)
+(global-set-key [f8] 'neotree-toggle)
+(global-set-key [f5] 'toggle-truncate-lines)
 
 ;; (load-theme 'solarized-dark t)
 ;; (load-theme 'monokai t)
