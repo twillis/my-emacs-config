@@ -132,3 +132,9 @@
 
 ;; common lisp
 (load-file (concat emacs-config-modules-dir "/cl-config.el"))
+
+;; flyspell-mode
+(load-file (concat emacs-config-modules-dir "/flyspell-config.el"))
+
+;; yasnippet
+(load-file (concat emacs-config-modules-dir "/yasnippet-config.el"))
