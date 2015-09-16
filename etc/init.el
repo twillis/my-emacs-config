@@ -16,11 +16,7 @@
 	anything
 	ag
         color-theme-approximate
-	solarized-theme
-	monokai-theme
-	color-theme-sanityinc-tomorrow
-	cyberpunk-theme
-	base16-theme
+	zenburn-theme
 	flx
         flx-ido
 	fuzzy
@@ -73,11 +69,7 @@
 (global-set-key [f8] 'neotree-toggle)
 (global-set-key [f5] 'toggle-truncate-lines)
 
-;; (load-theme 'solarized-dark t)
-;; (load-theme 'monokai t)
-;; (load-theme 'sanityinc-tomorrow-bright t)
-(load-theme 'cyberpunk t)
-
+(load-theme 'zenburn t)
 
 ;; defer fontification while scrolling
 
