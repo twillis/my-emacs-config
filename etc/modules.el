@@ -131,7 +131,7 @@
 (load-file (concat emacs-config-modules-dir "/my-elixir-config.el"))
 
 ;; common lisp
-(load-file (concat emacs-config-modules-dir "/cl-config.el"))
+;; (load-file (concat emacs-config-modules-dir "/cl-config.el"))
 
 ;; flyspell-mode
 (load-file (concat emacs-config-modules-dir "/flyspell-config.el"))

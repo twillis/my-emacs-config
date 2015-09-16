@@ -8,6 +8,8 @@
 			   flymake-coffee
                            js-comint
 			   handlebars-mode
+			   tern
+			   tern-auto-complete
 			   ))
 (ensure-packages js-config-packages)
 (require 'flymake-jslint)
@@ -31,6 +33,15 @@
 (add-hook 'js2-mode-hook
           (lambda ()
 	    (flymake-mode 1)))
+
+(add-hook 'js2-mode-hook
+	  (lambda ()
+	    (tern-mode t)))
+
+(eval-after-load 'tern
+  '(progn
+     (require 'tern-auto-complete)
+     (tern-ac-setup)))
 
 (eval-after-load "js2-mode"
   '(progn
