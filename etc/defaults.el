@@ -51,10 +51,6 @@
 ;; delete selection when typing like you would expect
 (delete-selection-mode 1)
 
-;; packages
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
 ;;flymake faces
 (custom-set-faces
  '(flymake-errline ((((class color)) (:underline "red" :weight bold))))

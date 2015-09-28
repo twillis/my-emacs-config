@@ -2,13 +2,18 @@
 ;;;; emacs initialization file init.el ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq package-archives
-      '(("gnu"         . "http://elpa.gnu.org/packages/")
-        ("original"    . "http://tromey.com/elpa/")
-        ("org"         . "http://orgmode.org/elpa/")
-        ("marmalade"   . "http://marmalade-repo.org/packages/")
-        ("melpa"       . "http://melpa.milkbox.net/packages/")))
 (package-initialize)
+
+;; packages
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+;; (add-to-list 'package-archives
+;;              '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+(add-to-list 'package-archives
+             '("gnu" . "http://elpa.gnu.org/packages/") t)
 
 (setq core-packages
       '(

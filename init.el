@@ -77,6 +77,7 @@
  '(ecb-tip-of-the-day nil)
  '(enh-ruby-program "/Users/twillis/.rbenv/versions/2.1.3/bin/ruby")
  '(fci-rule-color "#efefef")
+ '(gc-cons-threshold 80000000)
  '(haskell-process-auto-import-loaded-modules t)
  '(haskell-process-log t)
  '(haskell-process-suggest-remove-import-lines t)
@@ -106,7 +107,38 @@
  '(magit-diff-options nil)
  '(magit-use-overlays nil)
  '(org-agenda-files (quote ("~/.org/org.org")))
+ '(org-babel-clojure-backend (quote cider))
+ '(org-default-notes-file "~/.org/notes.org")
+ '(org-directory "~/.org")
+ '(org-edit-src-content-indentation 0)
+ '(org-enforce-todo-checkbox-dependencies t)
  '(org-enforce-todo-dependencies t)
+ '(org-from-is-user-regexp "\\<Tom Willis\\>")
+ '(org-latex-default-packages-alist
+   (quote
+    (("AUTO" "inputenc" t)
+     ("T1" "fontenc" t)
+     ("" "fixltx2e" nil)
+     ("" "graphicx" t)
+     ("" "grffile" t)
+     ("" "longtable" nil)
+     ("" "wrapfig" nil)
+     ("" "rotating" nil)
+     ("normalem" "ulem" t)
+     ("" "amsmath" t)
+     ("" "textcomp" t)
+     ("" "amssymb" t)
+     ("" "capt-of" nil)
+     ("colorlinks=true,urlcolor=blue,linkcolor=blue" "hyperref" t)
+     ("hyperref,x11names" "xcolor" t))))
+ '(org-log-done (quote time))
+ '(org-src-tab-acts-natively t)
+ '(org-time-clocksum-format
+   (quote
+    (:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t)))
+ '(org-todo-keywords
+   (quote
+    ((sequence "TODO" "INPROGRESS" "WAITING" "|" "DONE" "DELEGATED"))))
  '(pivotal-api-token "253047406257af17c209f41a11d2b9e3")
  '(rspec-use-spring-when-possible nil)
  '(semantic-new-buffer-setup-functions

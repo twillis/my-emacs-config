@@ -2,6 +2,7 @@
 ;; org-mode config
 ;; http://orgmode.org
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq org-enforce-todo-checkbox-dependencies t) ;; needs to be set before load
 (setq org-config-core '(org-plus-contrib))
 (setq org-config-packages '(
                             elnode
@@ -38,12 +39,11 @@
  'org-babel-load-languages
  '((python . t) 
    (emacs-lisp . t) 
-   ;; (clojure . t)
+   (clojure . t)
 ))
 
-;; need dev version of org-mode for this
-;; (require 'ob-clojure)
-;; (setq org-babel-clojure-backend 'cider)
+(require 'ob-clojure)
+(setq org-babel-clojure-backend 'cider)
 
 
 
@@ -62,8 +62,21 @@
 
 (setq org-refile-targets '((org-agenda-files . (:level . 1))))
 
+
 ;; display in hours not days
 (setq org-time-clocksum-format
       '(:hours "%d" :require-hours t :minutes ":%02d" :require-minutes t))
 
 (require 'ox-reveal)
+
+(require 'ox-latex)
+(unless (boundp 'org-latex-classes)
+  (setq org-latex-classes nil))
+(add-to-list 'org-latex-classes
+             '("article"
+               "\\documentclass{article}"
+               ("\\section{%s}" . "\\section*{%s}")
+               ("\\subsection{%s}" . "\\subsection*{%s}")
+               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+               ("\\paragraph{%s}" . "\\paragraph*{%s}")
+               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))

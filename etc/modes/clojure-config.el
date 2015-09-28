@@ -8,4 +8,3 @@
 			 clojurescript-mode
 			 clojure-quick-repls))
 (ensure-packages clojure-packages)
-
