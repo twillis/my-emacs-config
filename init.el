@@ -130,7 +130,8 @@
      ("" "amssymb" t)
      ("" "capt-of" nil)
      ("colorlinks=true,urlcolor=blue,linkcolor=blue" "hyperref" t)
-     ("hyperref,x11names" "xcolor" t))))
+     ("hyperref,x11names" "xcolor" t)
+     ("margin=1in" "geometry" nil))))
  '(org-log-done (quote time))
  '(org-src-tab-acts-natively t)
  '(org-time-clocksum-format
