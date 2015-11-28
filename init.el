@@ -12,6 +12,7 @@
 ;;set size
 (when window-system (set-frame-size (selected-frame) 200 56))
 
+(setq use-dialog-box nil)
 (setq scroll-step 1 scroll-conservatively 10000)
 
 ;; import env vars to help ruby not explode
@@ -30,63 +31,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path emacs-lib-dir)
 (add-to-list 'load-path emacs-local-dir)
-
+(load-file (concat emacs-config-dir "/my-server-config.el"))
 (load-file (concat emacs-config-dir "/my-package-config.el"))
-
-;; start server if not running
-;; http://stackoverflow.com/questions/5570451/how-to-start-emacs-server-only-if-it-is-not-started
-(load "server")
-(unless (server-running-p) (server-start))
-
-(setq use-dialog-box nil)
 
 ;; osx specific stuff
 (when (memq window-system '(mac ns))
   (load-file (concat emacs-config-dir "/osx.el")))
-
-(setq core-packages
-      '(
-	auto-complete
-	anything
-	ag
-        color-theme-approximate
-	solarized-theme
-	monokai-theme
-	color-theme-sanityinc-tomorrow
-	cyberpunk-theme
-	base16-theme
-	flx
-        flx-ido
-	fuzzy
-	helm
-	helm-projectile
-	helm-ack
-	helm-ag
-	ido-vertical-mode
-	ido-ubiquitous
-	ido-yes-or-no
-	ido-at-point
-	smex
-	idomenu
-	magit
-	;; magit-gh-pulls
-	nyan-mode
-	projectile
-	;; ack-and-a-half
-	rainbow-delimiters
-	rainbow-mode
-	undo-tree
-	expand-region
-        multiple-cursors
-        ace-jump-mode
-	ace-window
-	smartparens
-	iedit
-	ws-butler
-	neotree
-	))
-
-(ensure-packages core-packages)
 
 ;;bring it up
 (load-file (concat emacs-config-dir "/init.el"))
