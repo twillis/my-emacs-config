@@ -34,6 +34,11 @@
 (global-set-key (kbd "C-c h j") 'helm-semantic-or-imenu)
 (global-set-key (kbd "C-c h g") 'helm-do-ag)
 
+(add-hook 'eshell-mode-hook
+          (lambda ()
+              (eshell-cmpl-initialize)
+              (define-key eshell-mode-map (kbd "C-c C-l") 'helm-eshell-history)))
+
 (setq
  helm-google-suggest-use-curl-p t
  helm-scroll-amount 4 ; scroll 4 lines other window using M-<next>/M-<prior>
