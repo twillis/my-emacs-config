@@ -12,25 +12,18 @@
 ;;set size
 (when window-system (set-frame-size (selected-frame) 200 56))
 
+(setq scroll-step 1 scroll-conservatively 10000)
+
 ;; import env vars to help ruby not explode
 (setenv "LANG" "en_US.UTF-8")
 (setenv "LC_ALL" "en_US.UTF-8")
 (setenv "LC_CTYPE" "en_US.UTF-8")
-
-;; start server if not running
-;; http://stackoverflow.com/questions/5570451/how-to-start-emacs-server-only-if-it-is-not-started
-(load "server")
-(unless (server-running-p) (server-start))
-
-
-
 
 ;;important variables used elsewhere in the scripting
 (setq emacs-home-dir (expand-file-name "~/.emacs.d"))
 (setq emacs-lib-dir (concat emacs-home-dir "/lib"))
 (setq emacs-config-dir (concat emacs-home-dir "/etc"))
 (setq emacs-local-dir (concat emacs-home-dir "/local"));;personal lisp
-(setq use-dialog-box nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; add paths to load-path
@@ -38,18 +31,65 @@
 (add-to-list 'load-path emacs-lib-dir)
 (add-to-list 'load-path emacs-local-dir)
 
-;;bring it up
-(load-file (concat emacs-config-dir "/init.el"))
+(load-file (concat emacs-config-dir "/my-package-config.el"))
+
+;; start server if not running
+;; http://stackoverflow.com/questions/5570451/how-to-start-emacs-server-only-if-it-is-not-started
+(load "server")
+(unless (server-running-p) (server-start))
+
+(setq use-dialog-box nil)
 
 ;; osx specific stuff
-(when (memq window-system '(mac ns)) 
+(when (memq window-system '(mac ns))
   (load-file (concat emacs-config-dir "/osx.el")))
 
-;;; This was installed by package-install.el.
-;;; This provides support for the package system and
-;;; interfacing with ELPA, the package archive.
-;;; Move this code earlier if you want to reference
-;;; packages in your .emacs.
+(setq core-packages
+      '(
+	auto-complete
+	anything
+	ag
+        color-theme-approximate
+	solarized-theme
+	monokai-theme
+	color-theme-sanityinc-tomorrow
+	cyberpunk-theme
+	base16-theme
+	flx
+        flx-ido
+	fuzzy
+	helm
+	helm-projectile
+	helm-ack
+	helm-ag
+	ido-vertical-mode
+	ido-ubiquitous
+	ido-yes-or-no
+	ido-at-point
+	smex
+	idomenu
+	magit
+	;; magit-gh-pulls
+	nyan-mode
+	projectile
+	;; ack-and-a-half
+	rainbow-delimiters
+	rainbow-mode
+	undo-tree
+	expand-region
+        multiple-cursors
+        ace-jump-mode
+	ace-window
+	smartparens
+	iedit
+	ws-butler
+	neotree
+	))
+
+(ensure-packages core-packages)
+
+;;bring it up
+(load-file (concat emacs-config-dir "/init.el"))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -71,7 +111,7 @@
  '(custom-enabled-themes (quote (cyberpunk)))
  '(custom-safe-themes
    (quote
-    ("0c387e27a3dd040b33c6711ff92e13bd952369a788eee97e4e4ea2335ac5528f" "0aac4505da6d5061a732656d202c821fe8cdfd8fbdfca68280a47e66a4970608" "e6b8d70dd247727d95c92917311e3130e15a21103516a9ce26712ebeb1d95d34" "1affe85e8ae2667fb571fc8331e1e12840746dae5c46112d5abb0c3a973f5f5a" "51bea7765ddaee2aac2983fac8099ec7d62dff47b708aa3595ad29899e9e9e44" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "41b6698b5f9ab241ad6c30aea8c9f53d539e23ad4e3963abff4b57c0f8bf6730" "60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "9bac44c2b4dfbb723906b8c491ec06801feb57aa60448d047dbfdbd1a8650897" "ae8d0f1f36460f3705b583970188e4fbb145805b7accce0adb41031d99bd2580" "de2c46ed1752b0d0423cde9b6401062b67a6a1300c068d5d7f67725adc6c3afb" "5b6a7f2a00275a5589b14fa23ff1699785d9f7c1722ee9f79ec1b7de92fa0935" "e53cc4144192bb4e4ed10a3fa3e7442cae4c3d231df8822f6c02f1220a0d259a" "8b231ba3e5f61c2bb1bc3a2d84cbd16ea17ca13395653566d4dfbb11feaf8567" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e")))
+    ("8fed5e4b89cf69107d524c4b91b4a4c35bcf1b3563d5f306608f0c48f580fdf8" "0c387e27a3dd040b33c6711ff92e13bd952369a788eee97e4e4ea2335ac5528f" "0aac4505da6d5061a732656d202c821fe8cdfd8fbdfca68280a47e66a4970608" "e6b8d70dd247727d95c92917311e3130e15a21103516a9ce26712ebeb1d95d34" "1affe85e8ae2667fb571fc8331e1e12840746dae5c46112d5abb0c3a973f5f5a" "51bea7765ddaee2aac2983fac8099ec7d62dff47b708aa3595ad29899e9e9e44" "06f0b439b62164c6f8f84fdda32b62fb50b6d00e8b01c2208e55543a6337433a" "41b6698b5f9ab241ad6c30aea8c9f53d539e23ad4e3963abff4b57c0f8bf6730" "60f04e478dedc16397353fb9f33f0d895ea3dab4f581307fbf0aa2f07e658a40" "9bac44c2b4dfbb723906b8c491ec06801feb57aa60448d047dbfdbd1a8650897" "ae8d0f1f36460f3705b583970188e4fbb145805b7accce0adb41031d99bd2580" "de2c46ed1752b0d0423cde9b6401062b67a6a1300c068d5d7f67725adc6c3afb" "5b6a7f2a00275a5589b14fa23ff1699785d9f7c1722ee9f79ec1b7de92fa0935" "e53cc4144192bb4e4ed10a3fa3e7442cae4c3d231df8822f6c02f1220a0d259a" "8b231ba3e5f61c2bb1bc3a2d84cbd16ea17ca13395653566d4dfbb11feaf8567" "1b8d67b43ff1723960eb5e0cba512a2c7a2ad544ddb2533a90101fd1852b426e")))
  '(ecb-activation-selects-ecb-frame-if-already-active t)
  '(ecb-options-version "2.40")
  '(ecb-tip-of-the-day nil)
@@ -141,6 +181,7 @@
    (quote
     ((sequence "TODO" "INPROGRESS" "WAITING" "|" "DONE" "DELEGATED"))))
  '(pivotal-api-token "253047406257af17c209f41a11d2b9e3")
+ '(projectile-use-git-grep t)
  '(rspec-use-spring-when-possible nil)
  '(semantic-new-buffer-setup-functions
    (quote
@@ -205,8 +246,6 @@
     (unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83"))))
  
 (put 'narrow-to-region 'disabled nil)
-(setq scroll-step           1
-         scroll-conservatively 10000)
 
 (defun imenu-progress-message (a &optional c d))
 
