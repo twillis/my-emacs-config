@@ -2,9 +2,9 @@
 			 cider
 			 cider-decompile
 			 clj-refactor
-			 cljdoc
+			 ;; cljdoc
 			 cljsbuild-mode
 			 clojure-cheatsheet
-			 clojurescript-mode
+			 ;; clojurescript-mode
 			 clojure-quick-repls))
 (ensure-packages clojure-packages)

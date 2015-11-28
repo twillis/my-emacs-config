@@ -3,7 +3,7 @@
 ;; http://orgmode.org
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq org-enforce-todo-checkbox-dependencies t) ;; needs to be set before load
-(setq org-config-core '(org-plus-contrib))
+(setq org-config-core '(org))
 (setq org-config-packages '(
                             elnode
 			    ox-reveal
@@ -51,7 +51,7 @@
 (setq org-edit-src-content-indentation 0
       org-src-tab-acts-natively t
       org-src-fontify-natively t
-      ;; org-confirm-babel-evaluate nil
+      org-confirm-babel-evaluate nil
 )
 
 (setq org-capture-templates
@@ -72,11 +72,12 @@
 (require 'ox-latex)
 (unless (boundp 'org-latex-classes)
   (setq org-latex-classes nil))
-(add-to-list 'org-latex-classes
-             '("article"
-               "\\documentclass{article}"
-               ("\\section{%s}" . "\\section*{%s}")
-               ("\\subsection{%s}" . "\\subsection*{%s}")
-               ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
-               ("\\paragraph{%s}" . "\\paragraph*{%s}")
-               ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
+
+;; (add-to-list 'org-latex-classes
+;;              '("article"
+;;                "\\documentclass{article}"
+;;                ("\\section{%s}" . "\\section*{%s}")
+;;                ("\\subsection{%s}" . "\\subsection*{%s}")
+;;                ("\\subsubsection{%s}" . "\\subsubsection*{%s}")
+;;                ("\\paragraph{%s}" . "\\paragraph*{%s}")
+;;                ("\\subparagraph{%s}" . "\\subparagraph*{%s}")))
