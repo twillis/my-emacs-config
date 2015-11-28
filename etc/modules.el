@@ -6,7 +6,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; dired-jump C-x C-j
-(require 'dired-x)
+;; (require 'dired-x)
 
 ;; spotlight for emacs
 ;; http://www.emacswiki.org/emacs/Anything
