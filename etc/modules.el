@@ -12,19 +12,6 @@
 ;; http://www.emacswiki.org/emacs/Anything
 ;; (require 'anything-config)
 
-;; interactively do things (IDO)
-;; http://www.emacswiki.org/emacs/InteractivelyDoThings
-
-(require 'ido)
-(ido-mode t)
-(require 'idomenu)
-(ido-mode 1)
-(ido-everywhere 1)
-(ido-vertical-mode)
-(ido-ubiquitous-mode 1)
-(ido-yes-or-no-mode 1)
-(ido-at-point-mode 1)
-
 ; projectile
 (projectile-global-mode +1)
 

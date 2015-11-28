@@ -28,11 +28,6 @@
 	helm-projectile
 	helm-ack
 	helm-ag
-	ido-vertical-mode
-	ido-ubiquitous
-	ido-yes-or-no
-	ido-at-point
-	idomenu
 	magit
 	;; magit-gh-pulls
 	nyan-mode
