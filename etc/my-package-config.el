@@ -21,13 +21,8 @@
 	anything
 	ag
         color-theme-approximate
-	solarized-theme
-	monokai-theme
-	color-theme-sanityinc-tomorrow
 	cyberpunk-theme
 	base16-theme
-	flx
-        flx-ido
 	fuzzy
 	helm
 	helm-projectile
@@ -37,7 +32,6 @@
 	ido-ubiquitous
 	ido-yes-or-no
 	ido-at-point
-	smex
 	idomenu
 	magit
 	;; magit-gh-pulls
@@ -54,7 +48,6 @@
 	smartparens
 	iedit
 	ws-butler
-	neotree
 	))
 
 (ensure-packages core-packages)
