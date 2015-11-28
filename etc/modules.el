@@ -21,10 +21,10 @@
 (ido-mode 1)
 (ido-everywhere 1)
 (ido-vertical-mode)
-(flx-ido-mode 1)
 (ido-ubiquitous-mode 1)
 (ido-yes-or-no-mode 1)
 (ido-at-point-mode 1)
+
 ; projectile
 (projectile-global-mode +1)
 
@@ -77,17 +77,14 @@
 ;rainbow-delimiters
 (load-file (concat emacs-config-modules-dir "/rainbow-delimiters-config.el"))
 
-
 ;; clojure stuff
 (load-file (concat emacs-config-modules-dir "/clojure-config.el"))
-
 
 ;; js stuff
 (load-file (concat emacs-config-modules-dir "/js-config.el"))
 
 ;; html stuff
 (load-file (concat emacs-config-modules-dir "/html-config.el"))
-
 
 ;; css stuff
 (load-file (concat emacs-config-modules-dir "/css-config.el"))
@@ -97,7 +94,6 @@
 
 ;; smartparens mode config
 (load-file (concat emacs-config-modules-dir "/sp-config.el"))
-
 
 ;; visual-regexp
 (load-file (concat emacs-config-modules-dir "/visual-regexp-config.el"))
@@ -116,10 +112,8 @@
 ;; nlinum 
 ;; (load-file (concat emacs-config-modules-dir "/nlinum-config.el"))
 
-
 ;; haskell
-(load-file (concat emacs-config-modules-dir "/haskell-config.el"))
-
+;; (load-file (concat emacs-config-modules-dir "/haskell-config.el"))
 
 ;; god-mode
 ;;(load-file (concat emacs-config-modules-dir "/god-mode-config.el"))
@@ -128,7 +122,7 @@
 (load-file (concat emacs-config-modules-dir "/magit-config.el"))
 
 ;; elixir
-(load-file (concat emacs-config-modules-dir "/my-elixir-config.el"))
+;; (load-file (concat emacs-config-modules-dir "/my-elixir-config.el"))
 
 ;; common lisp
 ;; (load-file (concat emacs-config-modules-dir "/cl-config.el"))

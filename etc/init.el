@@ -4,8 +4,6 @@
 (ws-butler-global-mode)
 
 (setq projectile-switch-project-action 'projectile-dired)
-;; (setq projectile-switch-project-action 'neotree-projectile-action)
-(global-set-key [f8] 'neotree-toggle)
 (global-set-key [f5] 'toggle-truncate-lines)
 
 ;; (load-theme 'solarized-dark t)

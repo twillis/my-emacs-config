@@ -57,10 +57,5 @@
  '(flymake-warnline ((((class color)) (:underline "yellow"))))
  '(flymake-infoline ((((class color)) (:underline "dark gray")))))
 
-
-;; smex
-(smex-initialize)
-
-
 ;; tramp
 (setq tramp-default-method "ssh")
