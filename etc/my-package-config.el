@@ -18,7 +18,6 @@
 (setq core-packages
       '(
 	auto-complete
-	anything
 	ag
         color-theme-approximate
 	cyberpunk-theme

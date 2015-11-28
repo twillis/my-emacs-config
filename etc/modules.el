@@ -8,10 +8,6 @@
 ;; dired-jump C-x C-j
 ;; (require 'dired-x)
 
-;; spotlight for emacs
-;; http://www.emacswiki.org/emacs/Anything
-;; (require 'anything-config)
-
 ; projectile
 (projectile-global-mode +1)
 
