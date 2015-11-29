@@ -4,21 +4,6 @@
 ;;this config gets kind of hairy, attempting to clean it up some to
 ;;make it more manageable
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;strip down gui
-(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
-(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
-(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
-
-;;set size
-(when window-system (set-frame-size (selected-frame) 200 56))
-
-(setq use-dialog-box nil)
-(setq scroll-step 1 scroll-conservatively 10000)
-
-;; import env vars to help ruby not explode
-(setenv "LANG" "en_US.UTF-8")
-(setenv "LC_ALL" "en_US.UTF-8")
-(setenv "LC_CTYPE" "en_US.UTF-8")
 
 ;;important variables used elsewhere in the scripting
 (setq emacs-home-dir (expand-file-name "~/.emacs.d"))
@@ -31,7 +16,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path emacs-lib-dir)
 (add-to-list 'load-path emacs-local-dir)
-
 
 ;;bring it up
 (load-file (concat emacs-config-dir "/init.el"))

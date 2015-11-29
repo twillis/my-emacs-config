@@ -2,6 +2,24 @@
 ;; defaults.el - stuff I want no matter what I'm doing
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(ws-butler-global-mode)
+
+(setq projectile-switch-project-action 'projectile-dired)
+(global-set-key [f5] 'toggle-truncate-lines)
+
+;; (load-theme 'solarized-dark t)
+;; (load-theme 'monokai t)
+;; (load-theme 'sanityinc-tomorrow-bright t)
+(load-theme 'cyberpunk t)
+
+
+;; defer fontification while scrolling
+
+(setq jit-lock-defer-time 0.05)
+(setq initial-scratch-message "")
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; disable scroll bar, tool bar and menu bar to maximize real estate
 ;; for editing.
