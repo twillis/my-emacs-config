@@ -1,6 +1,14 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; emacs initialization file init.el ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(load-file (concat emacs-config-dir "/my-server-config.el"))
+
+(load-file (concat emacs-config-dir "/my-package-config.el"))
+
+;; osx specific stuff
+(when (memq window-system '(mac ns))
+  (load-file (concat emacs-config-dir "/osx.el")))
+
 (ws-butler-global-mode)
 
 (setq projectile-switch-project-action 'projectile-dired)
@@ -29,8 +37,6 @@
 
 (setq emacs-config-modules-dir 
       (concat emacs-config-dir "/modes"))
-
-(add-to-list 'load-path emacs-config-modules-dir)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run defaults.el

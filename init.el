@@ -31,12 +31,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-to-list 'load-path emacs-lib-dir)
 (add-to-list 'load-path emacs-local-dir)
-(load-file (concat emacs-config-dir "/my-server-config.el"))
-(load-file (concat emacs-config-dir "/my-package-config.el"))
 
-;; osx specific stuff
-(when (memq window-system '(mac ns))
-  (load-file (concat emacs-config-dir "/osx.el")))
 
 ;;bring it up
 (load-file (concat emacs-config-dir "/init.el"))
