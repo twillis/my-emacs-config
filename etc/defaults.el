@@ -77,3 +77,13 @@
 
 ;; tramp
 (setq tramp-default-method "ssh")
+
+
+; projectile
+(projectile-global-mode +1)
+
+;; turn on undo tree globally
+(global-undo-tree-mode)
+
+;; for imenu-ish stuff
+(semantic-mode 1)
