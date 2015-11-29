@@ -6,38 +6,38 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (dolist (module '(
-		  "org-config.el"
-		  "remember-config.el"
-		  "flymake-config.el"
-		  "python-config.el"
-		  "js-config.el"
-		  "erc-config.el"
-		  "nyan-config.el"
-		  "my-auto-complete-config.el"
-		  "rainbow-config.el"
-		  "expand-region-config.el"
-		  "multiple-cursors-config.el"
-		  "tom.el"
-		  "org-present-config.el"
-		  "rainbow-delimiters-config.el"
-		  "clojure-config.el"
-		  "js-config.el"
-		  "html-config.el"
-		  "css-config.el"
-		  "ruby-config.el"
-		  "sp-config.el"
-		  "visual-regexp-config.el"
-		  "compilemode-config.el"
-		  "my-helm-config.el"
-		  "swoop-config.el"
-		  "my-company-config.el"
-		  ;; "nlinum-config.el"
-		  ;; "haskell-config.el"
-		  ;; "god-mode-config.el"
-		  "magit-config.el"
-		  ;; "my-elixir-config.el"
-		  ;; "cl-config.el"
-		  ;; "flyspell-config.el"
-		  "yasnippet-config.el"
+		  org-config
+		  remember-config
+		  flymake-config
+		  python-config
+		  js-config
+		  erc-config
+		  nyan-config
+		  my-auto-complete-config
+		  rainbow-config
+		  expand-region-config
+		  multiple-cursors-config
+		  tom
+		  org-present-config
+		  rainbow-delimiters-config
+		  clojure-config
+		  js-config
+		  html-config
+		  css-config
+		  ruby-config
+		  sp-config
+		  visual-regexp-config
+		  compilemode-config
+		  my-helm-config
+		  swoop-config
+		  my-company-config
+		  ;; nlinum-config
+		  ;; haskell-config
+		  ;; god-mode-config
+		  magit-config
+		  ;; my-elixir-config
+		  ;; cl-config
+		  ;; flyspell-config
+		  yasnippet-config
 		  ))
-  (load-file (concat emacs-config-modules-dir "/" module)))
+  (load-file (concat emacs-config-modules-dir "/" (symbol-name module) ".el")))
