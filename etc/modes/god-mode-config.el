@@ -1,6 +1,5 @@
 ;; god-mode
-(setq god-mode-packages '(god-mode))
-(ensure-packages god-mode-packages)
+(ensure-packages '(god-mode))
 
 (global-set-key (kbd "<escape>") 'god-mode-all)
 (defun my-update-cursor ()

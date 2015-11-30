@@ -2,6 +2,7 @@
 ;;;; emacs initialization file init.el ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+
 ;; run server if not running
 (load-file (concat emacs-config-dir "/my-server-config.el"))
 
@@ -13,6 +14,9 @@
 
 ;; initial packages
 (load-file (concat emacs-config-dir "/my-package-config.el"))
+
+;; my theme
+(load-file (concat emacs-config-dir "/theme.el"))
 
 ;; osx specific stuff
 (when (memq window-system '(mac ns)) (load-file (concat emacs-config-dir "/osx.el")))

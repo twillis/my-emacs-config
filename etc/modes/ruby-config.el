@@ -1,26 +1,25 @@
 ;; just a wild guess what might be needed
-(setq ruby-config-packages '(
-			     enh-ruby-mode
-			     flymake-ruby
-			     helm-rails
-			     helm-rb
-			     helm-rubygems-local
-			     robe
-			     ruby-dev
-			     ruby-electric
-			     ruby-interpolation
-			     ruby-mode
-			     ruby-refactor
-			     ruby-test-mode
-			     ruby-tools
-                             rspec-mode
-                             flymake-haml
-                             haml-mode
-                             yaml-mode
-                             flymake-yaml
-			     projectile-rails
-			     ))
-(ensure-packages ruby-config-packages)
+(ensure-packages '(
+		   enh-ruby-mode
+		   flymake-ruby
+		   helm-rails
+		   helm-rb
+		   helm-rubygems-local
+		   robe
+		   ruby-dev
+		   ruby-electric
+		   ruby-interpolation
+		   ruby-mode
+		   ruby-refactor
+		   ruby-test-mode
+		   ruby-tools
+		   rspec-mode
+		   flymake-haml
+		   haml-mode
+		   yaml-mode
+		   flymake-yaml
+		   projectile-rails
+		   ))
 ;; from
 ;; http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 (add-to-list 'ac-modes 'enh-ruby-mode)

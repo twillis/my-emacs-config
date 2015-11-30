@@ -1,3 +1,2 @@
-(setq rainbow-packages '(rainbow-delimiters))
-(ensure-packages rainbow-packages)
+(ensure-packages '(rainbow-delimiters))
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)

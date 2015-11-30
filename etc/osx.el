@@ -1,6 +1,5 @@
-(setq osx-packages '(exec-path-from-shell
-		     vkill))
-(ensure-packages osx-packages)
+(ensure-packages '(exec-path-from-shell
+		   vkill))
 (exec-path-from-shell-initialize)
 
 
@@ -8,8 +7,8 @@
   "Toggle full screen"
   (interactive)
   (set-frame-parameter
-     nil 'fullscreen
-     (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
+   nil 'fullscreen
+   (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
 
 (global-set-key (kbd "C-<f12>") 'toggle-fullscreen)
 

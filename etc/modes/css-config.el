@@ -1,15 +1,14 @@
-(setq css-config-packages '(
-			     css-mode
-			     flymake-css
-			     flymake-less
-			     flymake-sass
-			     helm-css-scss
-			     less-css-mode
-			     scss-mode
-			     show-css
-			     sass-mode
-			     ))
-(ensure-packages css-config-packages)
+(ensure-packages '(
+		   css-mode
+		   flymake-css
+		   flymake-less
+		   flymake-sass
+		   helm-css-scss
+		   less-css-mode
+		   scss-mode
+		   show-css
+		   sass-mode
+		   ))
 
 (add-hook 'scss-mode-hook 'flymake-sass-load)
 (add-hook 'sass-mode-hook 'flymake-sass-load)

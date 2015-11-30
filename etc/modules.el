@@ -39,5 +39,10 @@
 		  ;; cl-config
 		  ;; flyspell-config
 		  yasnippet-config
+		  undo-tree-config
+		  ace-config
+		  iedit-config
+		  undo-tree-config
+		  ws-butler-config
 		  ))
   (load-file (concat emacs-config-modules-dir "/" (symbol-name module) ".el")))

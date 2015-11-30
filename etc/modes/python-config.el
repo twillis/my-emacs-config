@@ -1,7 +1,6 @@
 ;; flymake-python config
 ;; http://github.com/akaihola/flymake-python
-(setq python-packages '(jedi flymake-python-pyflakes))
-(ensure-packages python-packages)
+(ensure-packages '(jedi flymake-python-pyflakes))
 
 ;; (setq python-flymake-dir (concat emacs-lib-dir "/" "flymake-python"))
 ;; (add-to-list 'load-path python-flymake-dir)

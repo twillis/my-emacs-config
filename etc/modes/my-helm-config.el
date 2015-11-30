@@ -3,6 +3,14 @@
 ;;                            ;;
 ;; GROUP: Convenience -> Helm ;;
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(ensure-packages '(
+		   ag
+		   helm
+		   helm-projectile
+		   helm-ack
+		   helm-ag
+		   projectile
+		   ))
 (require 'helm)
 
 ;; must set before helm-config,  otherwise helm use default
@@ -36,8 +44,8 @@
 
 (add-hook 'eshell-mode-hook
           (lambda ()
-              (eshell-cmpl-initialize)
-              (define-key eshell-mode-map (kbd "C-c C-l") 'helm-eshell-history)))
+	    (eshell-cmpl-initialize)
+	    (define-key eshell-mode-map (kbd "C-c C-l") 'helm-eshell-history)))
 
 (setq
  helm-google-suggest-use-curl-p t

@@ -1,3 +1,4 @@
+(ensure-packages '(smartparens))
 (smartparens-global-mode t)
 (require 'smartparens-config)
 ;; (sp-use-paredit-bindings)

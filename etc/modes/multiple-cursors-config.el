@@ -1,4 +1,5 @@
 ;; how to turn on globally
+(ensure-packages '(multiple-cursors))
 (require 'multiple-cursors)
 
 

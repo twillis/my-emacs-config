@@ -1,6 +1,5 @@
 ;; https://github.com/ShingoFukuyama/helm-swoop
-(setq swoop-packages '(helm-swoop))
-(ensure-packages swoop-packages)
+(ensure-packages '(helm-swoop))
 (global-set-key (kbd "M-i") 'helm-swoop)
 
 ;; Split direcion. 'split-window-vertically or 'split-window-horizontally

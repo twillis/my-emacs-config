@@ -1,7 +1,4 @@
-(setq cl-packages '(slime))
-(ensure-packages cl-packages)
-
-
+(ensure-packages '(slime))
 
 (load (expand-file-name "~/quicklisp/slime-helper.el"))
 ;; Replace "sbcl" with the path to your implementation

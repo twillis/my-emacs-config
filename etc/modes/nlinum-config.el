@@ -1,6 +1,5 @@
-(setq nlinum-config-packages '(
-			     nlinum
-			     ))
-(ensure-packages nlinum-config-packages)
+(ensure-packages '(
+		   nlinum
+		   ))
 
 (global-nlinum-mode)

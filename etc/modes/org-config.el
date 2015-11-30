@@ -3,14 +3,12 @@
 ;; http://orgmode.org
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq org-enforce-todo-checkbox-dependencies t) ;; needs to be set before load
-(setq org-config-core '(org))
-(setq org-config-packages '(
-                            elnode
-			    ox-reveal
-			   ))
+(ensure-packages '(org))
 
-(ensure-packages org-config-core)
-(ensure-packages org-config-packages)
+(ensure-packages '(
+		   elnode
+		   ox-reveal
+		   ))
 
 ;; (require 'org-install)
 ;; (require 'org-mobile)
@@ -23,7 +21,7 @@
 (define-key global-map "\C-ca" 'org-agenda)
 
 (setq org-todo-keywords
-       '((sequence "TODO" "INPROGRESS" "WAITING" "|" "DONE" "DELEGATED")))
+      '((sequence "TODO" "INPROGRESS" "WAITING" "|" "DONE" "DELEGATED")))
 
 ;; record when an item is marked done
 (setq org-log-done t)
@@ -40,7 +38,7 @@
  '((python . t) 
    (emacs-lisp . t) 
    (clojure . t)
-))
+   ))
 
 (require 'ob-clojure)
 (setq org-babel-clojure-backend 'cider)
@@ -52,7 +50,7 @@
       org-src-tab-acts-natively t
       org-src-fontify-natively t
       org-confirm-babel-evaluate nil
-)
+      )
 
 (setq org-capture-templates
       '(("t" "Todo" entry (file+headline "~/.org/org.org" "Tasks")

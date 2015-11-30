@@ -1,4 +1,5 @@
 ;; magit config file
+(ensure-packages '(magit))
 (require 'magit)
 
 ;; (require 'magit-gh-pulls)

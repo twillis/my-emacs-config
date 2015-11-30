@@ -1,15 +1,13 @@
-(setq js-config-packages '(
-			   js2-mode
-			   ac-js2
-			   js2-refactor
-			   flymake-json
-			   json-mode
-			   coffee-mode
-			   flymake-coffee
-                           js-comint
-			   handlebars-mode
-			   ))
-(ensure-packages js-config-packages)
+(ensure-packages '(js2-mode
+		   ac-js2
+		   js2-refactor
+		   flymake-json
+		   json-mode
+		   coffee-mode
+		   flymake-coffee
+		   js-comint
+		   handlebars-mode
+		   ))
 (require 'flymake-jslint)
 
 (add-hook 'javascript-mode-hook

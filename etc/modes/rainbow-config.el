@@ -1,4 +1,7 @@
-;; CSS and Rainbow modes 
+;; CSS and Rainbow modes
+(ensure-packages '(
+		   rainbow-mode
+		   ))
 (require 'rainbow-mode)
 (defun all-css-modes() (css-mode) (rainbow-mode)) 
 
