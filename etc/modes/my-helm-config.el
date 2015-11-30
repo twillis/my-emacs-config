@@ -11,7 +11,14 @@
 		   helm-ag
 		   projectile
 		   ))
+
+; projectile
+(projectile-global-mode +1)
+(setq projectile-switch-project-action 'projectile-dired)
+
+
 (require 'helm)
+
 
 ;; must set before helm-config,  otherwise helm use default
 ;; prefix "C-x c", which is inconvenient because you can

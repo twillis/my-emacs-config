@@ -2,7 +2,6 @@
 ;; defaults.el - stuff I want no matter what I'm doing
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(setq projectile-switch-project-action 'projectile-dired)
 (global-set-key [f5] 'toggle-truncate-lines)
 
 ;; defer fontification while scrolling
@@ -68,10 +67,6 @@
 
 ;; tramp
 (setq tramp-default-method "ssh")
-
-
-; projectile
-(projectile-global-mode +1)
 
 ;; for imenu-ish stuff
 (semantic-mode 1)
