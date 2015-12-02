@@ -8,3 +8,4 @@
 
 (setq use-dialog-box nil)
 (setq scroll-step 1 scroll-conservatively 10000)
+(setq redisplay-dont-pause t)
