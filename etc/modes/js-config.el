@@ -1,6 +1,6 @@
 (setq js-config-packages '(
-			   js2-mode
 			   ac-js2
+			   js2-mode
 			   js2-refactor
 			   flymake-json
 			   json-mode
@@ -11,6 +11,7 @@
 			   tern
 			   tern-auto-complete
 			   ))
+
 (ensure-packages js-config-packages)
 (require 'flymake-jslint)
 
@@ -27,6 +28,8 @@
 (add-hook 'json-mode-hook 'my-disable-indent-tabs-mode)
 (add-hook 'coffee-mode-hook 'flymake-coffee-load)
 
+(js2r-add-keybindings-with-prefix "C-c C-m")
+
 (defun my-disable-indent-tabs-mode ()
   (set-variable 'indent-tabs-mode nil))
 
@@ -42,6 +45,10 @@
   '(progn
      (require 'tern-auto-complete)
      (tern-ac-setup)))
+
+(eval-after-load 'tern
+  '(progn
+     (setq tern-command (append tern-command '("--no-port-file")))))
 
 (eval-after-load "js2-mode"
   '(progn

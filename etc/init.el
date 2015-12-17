@@ -46,6 +46,7 @@
 	iedit
 	ws-butler
 	neotree
+	smartparens
 	))
 
 (unless package-archive-contents

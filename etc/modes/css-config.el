@@ -15,3 +15,5 @@
 (add-hook 'sass-mode-hook 'flymake-sass-load)
 (add-hook 'less-css-mode 'flymake-less-load)
 (add-hook 'css-mode 'flymake-css-load)
+
+(setq css-indent-offset 2)

@@ -47,9 +47,6 @@
 ;;python config
 (load-file (concat emacs-config-modules-dir "/python-config.el"))
 
-;;js config
-(load-file (concat emacs-config-modules-dir "/js-config.el"))
-
 ;; erc
 (load-file (concat emacs-config-modules-dir "/erc-config.el"))
 
@@ -78,7 +75,7 @@
 (load-file (concat emacs-config-modules-dir "/rainbow-delimiters-config.el"))
 
 
-;; clojure stuff
+;; Clojure stuff
 (load-file (concat emacs-config-modules-dir "/clojure-config.el"))
 
 

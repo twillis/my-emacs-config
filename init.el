@@ -28,6 +28,7 @@
 (setq emacs-config-dir (concat emacs-home-dir "/etc"))
 (setq emacs-local-dir (concat emacs-home-dir "/local"));;personal lisp
 (setq use-dialog-box nil)
+(setq temporary-file-directory "~/.emacs.d/tmp/")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; add paths to load-path
@@ -61,6 +62,7 @@
    [unspecified "#282a2e" "#cc6666" "#b5bd68" "#f0c674" "#81a2be" "#b294bb" "#81a2be" "#e0e0e0"] t)
  '(column-number-mode t)
  '(compilation-message-face (quote default))
+ '(create-lockfiles nil)
  '(cua-global-mark-cursor-color "#2aa198")
  '(cua-normal-cursor-color "#839496")
  '(cua-overwrite-cursor-color "#b58900")
@@ -104,6 +106,9 @@
  '(org-agenda-files (quote ("~/.org/org.org")))
  '(org-enforce-todo-dependencies t)
  '(pivotal-api-token "253047406257af17c209f41a11d2b9e3")
+ '(projectile-globally-ignored-directories
+   (quote
+    (".idea" ".eunit" ".git" ".hg" ".fslckout" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "dist" "tmp" "node_modules" "bower_components")))
  '(rspec-use-spring-when-possible nil)
  '(semantic-new-buffer-setup-functions
    (quote
