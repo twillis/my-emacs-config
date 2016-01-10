@@ -36,7 +36,7 @@
 		  ;; god-mode-config
 		  magit-config
 		  ;; my-elixir-config
-		  ;; cl-config
+		  cl-config
 		  ;; flyspell-config
 		  yasnippet-config
 		  undo-tree-config
@@ -44,5 +44,6 @@
 		  iedit-config
 		  undo-tree-config
 		  ws-butler-config
+		  edit-server-config
 		  ))
   (load-file (concat emacs-config-modules-dir "/" (symbol-name module) ".el")))
