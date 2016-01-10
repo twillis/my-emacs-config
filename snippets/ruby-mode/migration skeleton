@@ -1,0 +1,13 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: migration skeleton
+# key: sqlm
+# binding: direct-keybinding
+# --
+Sequel.migration do
+  up do
+    run 'set search_path=public;'
+    run %Q(
+$0
+)
+  end
+end
