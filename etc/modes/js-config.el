@@ -1,14 +1,11 @@
 (ensure-packages '(js2-mode
 		   ac-js2
 		   js2-refactor
-		   flymake-json
 		   json-mode
 		   coffee-mode
-		   flymake-coffee
 		   js-comint
 		   handlebars-mode
-		   flycheck
-		   ))
+		   flycheck))
 
 (autoload 'js2-mode "js2-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
@@ -20,7 +17,6 @@
 
 (add-hook 'js2-mode-hook 'my-disable-indent-tabs-mode)
 (add-hook 'json-mode-hook 'my-disable-indent-tabs-mode)
-(add-hook 'coffee-mode-hook 'flymake-coffee-load)
 (add-hook 'js2-mode-hook 'flycheck-mode)
 (add-hook 'js-mode-hook 'flycheck-mode)
 

@@ -1,7 +1,6 @@
 (ensure-packages '(
 		   emmet-mode
 		   haml-mode
-		   flymake-haml
 		   smartparens))
 
 (add-to-list 'auto-mode-alist '("\\.html$" . html-mode))

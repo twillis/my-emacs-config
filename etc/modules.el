@@ -8,7 +8,7 @@
 (dolist (module '(
 		  org-config
 		  remember-config
-		  flymake-config
+		  flycheck-config
 		  python-config
 		  js-config
 		  erc-config
@@ -45,6 +45,5 @@
 		  undo-tree-config
 		  ws-butler-config
 		  edit-server-config
-		  my-editorconfig-config
-		  ))
+		  my-editorconfig-config))
   (load-file (concat emacs-config-modules-dir "/" (symbol-name module) ".el")))

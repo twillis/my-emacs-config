@@ -1,6 +1,5 @@
 ;; just a wild guess what might be needed
 (ensure-packages '(
-		   flymake-ruby
 		   helm-rails
 		   helm-rb
 		   helm-rubygems-local
@@ -11,18 +10,13 @@
 		   ruby-test-mode
 		   ruby-tools
 		   rspec-mode
-		   flymake-haml
 		   haml-mode
 		   yaml-mode
-		   flymake-yaml
 		   projectile-rails
 		   ))
 ;; from
 ;; http://crypt.codemancers.com/posts/2013-09-26-setting-up-emacs-as-development-environment-on-osx/
 (add-hook 'after-init-hook 'inf-ruby-switch-setup)
-(add-hook 'ruby-mode-hook 'flymake-ruby-load)
-(add-hook 'haml-mode-hook 'flymake-haml-load)
-(add-hook 'yaml-mode-hook 'flymake-yaml-load)
 
 ;; something i've installed here breaks web-mode, probbaly rainbow or
 ;; hilight or something else
