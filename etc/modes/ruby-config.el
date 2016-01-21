@@ -39,6 +39,7 @@
 (add-to-list 'auto-mode-alist '("\\.rabl$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.jbuilder$" . ruby-mode))
 
+(setq flycheck-rubocoprc "~/.rubocop.yml")
 
 (defun inf-ruby-console-padrino (dir)
   "run padrino c in dir"

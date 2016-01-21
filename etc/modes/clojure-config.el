@@ -6,4 +6,10 @@
 		   cljsbuild-mode
 		   clojure-cheatsheet
 		   ;; clojurescript-mode
-		   clojure-quick-repls))
+		   clojure-quick-repls
+		   flycheck-clojure
+		   flycheck-pos-tip))
+
+(eval-after-load 'flycheck '(flycheck-clojure-setup))
+(eval-after-load 'flycheck
+  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))

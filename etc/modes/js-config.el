@@ -20,6 +20,10 @@
 (add-hook 'js2-mode-hook 'flycheck-mode)
 (add-hook 'js-mode-hook 'flycheck-mode)
 
+(setq flycheck-eslintrc "~/.eslintrc")
+(setq flycheck-jshintrc "~/.jshintrc")
+(setq flycheck-jscsrc "~/.jscsrc")
+
 (require 'flycheck)
 (flycheck-add-next-checker 'javascript-jshint '(error . javascript-jscs))
 (flycheck-add-next-checker 'javascript-jscs '(error . javascript-eslint))
