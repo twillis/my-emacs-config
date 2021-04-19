@@ -1,3 +1,6 @@
+# abandoned
+I use [doom-emacs](https://github.com/hlissner/doom-emacs) now and you may want to as well.
+
 # my emacs config
 
 So, this is my emacs configuration. You might find it useful. Maybe
